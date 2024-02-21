@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAGE 7</title>
+	<script>
+            function validateForm()
+            {
+                var course = document.getElementById("course").value;
+                var duration = document.getElementById("duration").value;
+                var coursefees = document.getElementById("coursefees").value;
+                var batchtiming = document.getElementById("batchtiming").value;
+                 var fname = document.getElementById("fname").value;
+                 var address = document.getElementById("address").value;
+                var maritialstatus = document.getElementById("maritialstatus").value;
+               
+ 
+                
+                
+
+                if (course == '')
+                {
+                    alert("please enter the course.");
+                    return false
+                }
+                else if (duration == '')
+                {
+                    alert("please enter the duration.");
+                    return false
+                }
+                else if (coursefees == '')
+                {
+                    alert("please enter the course fees.");
+                    return false
+                }
+                else if (batchtiming == '')
+                {
+                    alert("please enter the batch timing.");
+                    return false
+                }
+                 else if (fname == '')
+                {
+                    alert("please enter your full name.");
+                    return false
+                }
+                 else if (address == '')
+                {
+                    alert("please enter your address.");
+                    return false
+                }
+               
+                else if (maritialstatus== '')
+                {
+                    alert("please enter your maritialstatus.");
+                    return false
+                }
+               
+               
+            }
+        </script>
+</head>
+<body background="page12.jpg">
+	<center>	<font face="ALGERIAN" size="24">
+	ADMISSION FORM
+	</font>
+	</center>
+	<form>
+	
+	<table border="5" width="100%">
+		<tr>
+			<td>1. COURSE<br>
+				<input type="text" size="25" name="t1" Id="course"/></td>
+		</tr>
+		<tr>
+			<td>2. DURATION<br>
+				<input type="text" size="25" name="t2" Id="duration"/></td>
+		</tr>
+		<tr>
+			<td>3. COURSE FEES<br>
+				<input type="text" size="25" name="t3" Id="coursefees"/></td>
+		</tr>
+		<tr>
+			<td>4. BATCH TIMING<br>
+				<input type="text" size="25" name="t4" Id="batchtiming"/></td>
+		</tr>	
+	</table><br>
+	<center>
+		<font face="ALGERIAN" size="24">
+			PROFESSIONAL DETAILS
+		</font></size>
+	</center>
+	<table border="5" width="100%">
+		<tr>
+			<td>1. FULL NAME: <input type="text" size="25" name="t5" Id="fname"></td></tr>
+			<tr>
+			<td>2. ADDRESS: <textarea rows="3" cols="20" name="t6" Id="address"></textarea>></td></tr>
+			<tr>
+				<td>3. DOB: <select>month
+					<option>JAN</option>
+					<option>FEB</option>
+					<option>MAR</option>		
+					<option>APR</option>
+					<option>MAY</option>
+					<option>JUN</option>
+					<option>JUL</option>
+					<option>AUG</option>
+					<option>SEP</option>
+					<option>OCT</option>
+					<option>NOV</option>
+					<option>DEC</option>
+						</select>
+						<select>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+						</select>
+						<select>
+							<option>2000</option>
+							<option>2001</option>
+							<option>2002</option>
+							<option>2003</option>
+							<option>2004</option>
+						</select>
+						<tr>
+							<td>4. MARITIAL STATUS: <input type="radio" >MARRIED 
+							<input type="radio" name="t8" Id="maritialstatus" >UNMARRIED
+						</td></tr>
+						<tr>
+							<td>5. EMPLOYMENT STATUS:
+								<input type="checkbox"> EMPLOYED
+								<input type="checkbox">UNEMPLOYED
+								<input type="checkbox" name="t9" Id="employmentstatus" >STUDENT
+							</td></tr>
+							<tr>
+								<td>6. QUALIFICATION: <select>
+									<option>SSC</option>
+									<option>HSC</option>
+									<option>B.TECH</option>
+								</select>
+							</td></tr>
+	</table>
+	<a href="ASS PAGE 1.HTML"><input type="button" value="Submit" size="40" onclick="return validateForm()"<br>
+	</a>
+</form>
+
+</body>
+</html>
