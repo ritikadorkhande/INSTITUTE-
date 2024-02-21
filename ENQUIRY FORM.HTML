@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAGE 6</title>
+	<script>
+            function validateForm()
+            {
+                var fname = document.getElementById("fname").value;
+                var lname = document.getElementById("lname").value;
+                var email = document.getElementById("email").value;
+                var mob = document.getElementById("mob").value;
+                var college = document.getElementById("college").value;
+                var qualifications = document.getElementById("qualifications").value;
+                var address = document.getElementById("address").value;
+
+
+                if (fname == '')
+                {
+                    alert("please enter user name.");
+                    return false
+                }
+                else if(lname == '')
+                {
+                    alert("please enter your last name.");
+                    return false
+                } 
+                 else if(email =='')
+                {
+                    alert("please enter your email name.");
+                    return false
+                } 
+  
+
+                else if(mob == '')
+                {
+                    alert("please enter your mobile number.")
+                    return false
+                }
+
+               
+                 else if (mob.length < 10 || mob.length > 10)
+                {
+                    alert("MOBILE NUMBER min and max length is 10.");
+                    return false
+
+
+                }
+                 else if(college == '')
+                {
+                    alert("please enter your college name.");
+                    return false
+                } 
+                 else if(qualifications == '')
+                {
+                    alert("please enter your qualifications.");
+                    return false
+                }
+                 else if(address == '')
+                {
+                    alert("please enter your address.");
+                    return false
+                }  
+                 else
+                {
+                    alert('Thank You for Login & You are Redirecting to welcome page');
+                    return true
+                }
+            }
+</script>            
+</head>
+<center><body background="page11.jpg">
+
+	
+	<BODY TEXT="WHITE">
+	<font face="ALGERIAN" size="24">
+		<U>ENQUIRY FORM</U><br>
+	</font>
+	</center>
+	
+	<font face="ALGERIAN">
+	<form>
+		<table border="3" width="100%">
+		<tr>
+			<td >FIRST NAME:<input type="text" size="20" name="t1" id="fname"/>
+				LAST NAME:<input type="text" size="20" name="t2" id="lname"/></td>
+		</tr>
+		<tr>
+			<td >EMAIL_ID:<input type="text" size="20" name="t7" id="email" /></td>
+		</tr>
+		<tr>
+			<td >MOBILE NO. :<input type="text" size="20" name="t3" id="mob" /></td>
+		</tr>
+		<tr>
+			<td >COLLEGE/SCHOOL:<input type="text" size="20" name="t4" id="college" /></td>
+		</tr>
+		<tr>
+			<td>QUALIFICATIONS<input type="text" size="20" name="t5" id="qualifications" /></td>
+		</tr>
+		<tr>
+			<td>COURSE INTERESTED
+				<input type="checkbox"> C
+				<input type="checkbox">C++
+				<input type="checkbox" >.NET
+				<input type="checkbox" >JAVA
+				<input type="checkbox" >PYTHON</td>
+		</tr>
+		<tr>
+			<td>ADDRESS:<textarea rows="3" cols="20" name="t6" id="address"/></textarea></td></tr>
+		<tr>
+			<td>source:<select>
+				<option>NEWSPAPER</option>
+				<OPTION>ONLINE PLATFORM</OPTION>
+				<OPTION>WHATSAPP MESSAGE</OPTION>
+				<OPTION>FRIENDS</OPTION>
+				<OPTION>BROCHURE</OPTION>
+			</select></td>
+		</tr>
+			<tr>
+				<td> <a href="ASS PAGE 1.HTML"><input type="button" value="Submit" size="40" onclick="return validateForm()"></a></td>
+			</tr>
+			
+		</table>
+		</font>
+	</form>
+		
+	
+
+
+</body>
+</html>
